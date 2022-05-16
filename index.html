@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stanvic Shoes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="w3.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Varela:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Great+Vibes|Marmelad" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/theme.css" rel="stylesheet">
+	<style>
+		
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 70px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(10,0,10,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: skyblue;
+  margin: auto;
+  padding:0 20px 20px 20px;
+  border: 1px solid #888;
+  width: 90%;
+  z-index: 3;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dflex{
+	display: grid;
+	/*align-items: center;
+	justify-content: space-around;*/
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3px;
+}
+.cancel{
+	text-decoration:line-through;
+}
+	</style>
+
+</head>
+
+<body id="page-top">
+
+
+<div class="illustration">
+	<div class="i-large"></div>
+	<div class="i-medium"></div>
+	<div class="i-small"></div>
+</div>
+
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><!--<img class="iconlogo" src="img/iconlogo.png" width="50">--><i>StanvicFootwears</i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#coupon">Special Offer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">F.A.Q.</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <!--<li>
+                        <a target="_blank" href="http://www.zuthemes.com/freebies/zuchristmas-free-landing-page-for-holidays/" class="menuhighlight"><i class="fa fa-cloud-download"></i> Download</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row mySlides w3-animate-right">
+              <div class="col-sm-6">
+                <div class="device-container shadow">
+					<img class="shadow w3-image" src="img/mvp1.jpg" width="380px" height="300px">
+				</div>
+              </div>
+                <div class="col-sm-6">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h2 class="w3-xxlarge w3-text-light-grey"><b>A Birthday Prensent</b></h2>
+                            <h4>Make your friends and loved ones smile with this special package.</h4>
+                            <br/>
+							<p><span class="w3-xlarge w3-text-red w3-wide cancel"><b>#15,000</b></span><span class="w3-tag ">-15% off</span></p>
+							<p class="w3-xxlarge w3-text-light-grey w3-wide "><b>#12,000</b></p>
+							<br/>
+							
+                            <button type="button" id="myBtn" class="w3-button w3-wide w3-teal">Buy Now</button>
+                          <br/>
+                   
+                          <!--<div class="social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="row mySlides w3-animate-right">
+              <div class="col-sm-6">
+                <div class="device-container shadow">
+					<img class="shadow w3-image" src="img/b-ball.jpg" width="380px" height="300px">
+				</div>
+              </div>
+                <div class="col-sm-6">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h2 class="w3-xxlarge w3-text-light-grey"><b>A Birthday Prensent</b></h2>
+                            <h4>Make your friends and loved ones smile with this special package.</h4>
+                            <br/>
+							<p><span class="w3-xlarge w3-text-red w3-wide cancel"><b>#35,000</b></span><span class="w3-tag ">-15% off</span></p>
+							<p class="w3-xxlarge w3-text-light-grey w3-wide "><b>#31,000</b></p>
+							<br/>
+							
+                            <button type="button" id="myBtn" class="w3-button w3-wide w3-teal">Buy Now</button>
+                          <br/>
+                   
+                          <!--<div class="social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="audioembed">
+          <audio controls="true" autoplay="true" src="audio.mp3"  onloadeddata="setLowVolume()" id="audio1">
+        </div>-->
+      </header>
+	  
+	  
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5080); // Change image every 2 seconds
+}
+</script>
+	  
+					<!-- modal-->
+	<div class="modal" id="myModal">
+		<div class="modal-content w3-animate-top w3-round-large w3-text-black">
+			<span class="close">&times</span>
+			<h4 class="w3-container"><b>HOW TO BUY</b></h4>
+
+			 <div class="w3-container w3-padding-16 w3-white">
+	          	<p class="w3-left w3-large" style="font-style: italic;"><b>You can link us through any of the following.</b></p><br>
+	          	<ul class="w3-margin w3-container" style="text-align: left;">
+	          		<li>via this our Website</li>
+	          		<li>via Whatsapp</li>
+	          		<li>Give us a Call</li>
+	          	</ul>
+			<p class="w3-padding-16 w3-white">
+				<span><img src="img/shipping.jpg" height="60px" width="50px"></span>
+				<span class="w3-large"><b>Delivery is within 24hours</b></span>
+			</p>
+	          	<div class="dflex w3-center">
+	          		<div class="w3-container w3-black" style="height:30px;">
+      					<p class="w3-small w3-text-white" style="margin-top: 4px;"><a href="message.html">message us</a></p>
+      				</div>
+	          		<div class="w3-container w3-teal w3-card-4" style="height:30px;">
+	          			<p><a href="https://wa.me/7035963855?text=I'm%20interested%20in%20your%20shoes%20for%20sale"><i class="fa fa-whatsapp fa-fw w3-text-black w3-xlarge"></i></a></p>
+	          		</div>
+	          		<div class="w3-container w3-orange" style="height:30px;">
+	          			<p><a href="tel:08122321931"><i class="fa fa-phone fa-fw w3-text-black w3-xlarge"></i></a></p>
+	          		</div>
+	          	</div>
+			</div>
+		</div>
+	</div>
+
+    <section id="coupon" class="couponsection bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="title section-heading">Offer Lasts till August</h2>
+                    <p>Payment is on spot of delivery</p>
+                    <div class="coupon">
+                      <img src="img/gift.png">
+                    	<h3>30% Off Any purchase!</h3>
+						<button type="button" id="myBtn" class="w3-button w3-wide w3-teal">Buy Now</button>
+                      <!--<h4>Coupon Code: <span style="border-bottom:1px dashed">ZUTHEMES50</span> </h4>
+                      <br/>
+                    	<p><i>Use this coupon code at checkout to receive<br/> <u>half off</u> your Zu Themes order. Hurry up, limited order!</i></p>
+                      <p><a href="http://www.zuthemes.com" class="btn btn-buynow"><i class="fa fa-shopping-cart"></i> Shop Now</a>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2 class="title">F.A.Q.</h2>
+                        <p class="text-muted">Contact us if you have a different question</p>
+                        <img src="img/sep.png" width="120">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-md-6">
+                  <h3>How soon do I get my item?</h3>
+                  <p>Your order is processed and packaged for delivery within 48hours.</p>
+
+                  <h3>Is there a free shipping?</h3>
+                  <p>Free shipping is within Kubwa, Dutse, Gwarinpa and environs.</p>
+
+                  <h3>Can I get several discounts?</h3>
+                  <p>Only on quantity purchase, half a dozen and above.</p>
+
+
+                </div>
+                <div class="col-md-6">
+                  <h3>Do you deliver it as a gift?</h3>
+                  <p> Yes, it comes with a nicely packaged gift box.</p>
+
+                  <h3>What payment methods?</h3>
+                  <p>Cash on delivery is most prferred by most customers.</p>
+
+                  <h3>I have a different question?</h3>
+                  <p> If you have more inquiries to make, contact us by sending us a message below.
+				  </p>
+
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="contact">
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <div class="section-heading">
+                          <h2 class="title" style="margin-bottom:60px;color:#fff;">Contact Us</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="done">
+                  <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <form method="post" action="contact.php" id="contactform">
+                  <div class="form">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Name *">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="email" placeholder="E-mail *">
+                      </div>
+                    </div>
+                    <textarea name="comment" rows="7" placeholder="Message *"></textarea>
+                    <input type="submit" id="submit" class="clearfix btn" value="Send">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="overlay"></div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2022 Stanvic Concepts. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+	
+	<script>
+		// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/validate.js"></script>
+
+</body>
+
+</html>
